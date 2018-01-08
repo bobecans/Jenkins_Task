@@ -8,7 +8,8 @@ pipeline {
             stage('CTest Stage') {
             steps {
                 bat 'mvn test'
-            }
+            
+       }
         }
     }
-}
+    
