@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('CBuild Stage') {
             steps {
-                bat 'mvn make'
+                bat 'mvn -B -DskipTests clean package'
             }
         }
     }
